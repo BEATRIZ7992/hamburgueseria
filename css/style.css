@@ -36,5 +36,42 @@ body{
 }
 
 .container{
-    
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+/*inicio header*/
+
+header .nav-top{
+    background-color: var(--colorsecundario);
+    padding: var(--margingrid) 0px;
+}
+
+header .nav-top .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+header .nav-top a span {
+    display: none
+}
+
+header .nav-top a i {
+    font-size: 150%
+}
+
+/*fin header*/
+
+/*mediaquerys*/
+
+@media(min-width: 768px) {
+    header .nav-top a span {
+        display: inline;
+        color: white
+    }
+
 }
