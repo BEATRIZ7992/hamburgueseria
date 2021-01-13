@@ -12,6 +12,8 @@ font-family: 'Montserrat', sans-serif;*/
 
 html{
     scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
 }
 
 img{
@@ -110,7 +112,7 @@ header .menu li:last-child a {
 
 
 header .menu .activo {
-    color: var(--colorprincipal)
+    color: var(--colorprincipal);
 }
 
 header nav .hamburguesa div {
@@ -171,7 +173,38 @@ header nav .hamburguesa div {
 
 }*/
 
+footer{
+    background-color: var(--colorsecundario);
+    padding: var(--margingrid) 0px;
+    color: white;
+    text-align:center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+}
 
+footer a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+footer a:hover {
+
+    color: var(--colorprincipal);
+}
+
+.flecha{
+
+    display: block;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    font-size: 250%;
+}
+/*
 footer .legalfooter{ 
     
 
@@ -185,7 +218,7 @@ footer .legalfooter{
 
     /*me resulta muy dificil los margin*/
      
-
+/*
 }
     
 
@@ -211,11 +244,11 @@ footer .nav-botton a{
 }
 
 
-
+*/
 
 /*fin footer*/
 
-/*mediaquerys*/
+
 
 /* query footer
 
@@ -229,8 +262,19 @@ footer .nav-botton a{
 
 NO LO NECESITA?¿?
 */
+/*
+<div class="legalfooter">
+            <nav class="nav-botton">
 
+                <div class="footer-legal-menu">
+                    <li><a href="">Copyright&copy;2020</a></li>
+                    <li><a href="">Aviso legal</a></li>
+                    <li><a href="">Cookies</a></li>
 
+                </div>
+            </nav>
+            */
+/*mediaquerys*/
 
 @media(min-width: 768px) {
     header .nav-top a span {
@@ -240,6 +284,10 @@ NO LO NECESITA?¿?
 
 header .nav-top a i {
     font-size: 120%;
+}
+
+footer{
+    text-align: var(--fontsize);
 }
 }
 
