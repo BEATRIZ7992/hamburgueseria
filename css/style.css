@@ -364,7 +364,7 @@ NO LO NECESITA?¿?
 
 
 main section{
-    padding: calc(var(--margingrid)*3) var(--margingrid) calc(var(--margingrid)*5) var(--margingrid);
+    padding: calc(var(--margingrid)*3) var(--margingrid)
 
 }
 
@@ -446,6 +446,51 @@ main section p{
 }
 /*fin our services*/
 
+/*inicio aboutus*/
+main #aboutus .flex .column {
+
+    margin: var(--margingrid) 0;
+}
+
+main #aboutus .column h3{
+
+    font-weight: 700;
+    font-size: 110%;
+}
+
+main #aboutus .column h4{
+
+    margin: 0.8em 0;
+    color:var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+
+    width: 95%;
+    margin: 0 auto;
+   
+}
+
+main #aboutus .imagen .marco:hover{
+
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+
+
+main #aboutus .imagen .marco img:hover{
+    transform: rotateZ(-10deg);
+    transition:1s;
+
+}
+
+
+
+
+
+/*fin aboutus*/
 
 
 
@@ -455,13 +500,13 @@ main section p{
 @media( min-width: 600px)
 
 { main #ourservices .grid{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: var(--margingrid);
 
 }
 
 main #ourservices .grid article:last-child{
-    grid-column:3/1;
+    grid-column:3/4;
 }
 
 main #ourservices .grid article{
@@ -477,6 +522,19 @@ main #ourservices .grid article{
 
 main #ourservices .grid article:last-child{
     grid-column:3/4;
+}
+
+main #aboutus .flex  {
+
+    display: flex;
+}
+
+main #aboutus .imgen{
+    width: 80%;
+}
+
+main #aboutus{
+    margin-bottom: 2em;
 }
 
 }
