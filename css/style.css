@@ -320,7 +320,7 @@ NO LO NECESITA?¿?
 .hero p{
     font-size: 1.15em;
 }
-
+ 
 
 .boton{
     display: inline-block;
@@ -387,6 +387,10 @@ main section .underline{
     margin-bottom: var(--margingrid);
 
 
+}
+
+.colores{
+    background-color: var(--colorsecundario);
 }
 
 main section .underline hr{
@@ -466,23 +470,24 @@ main #aboutus .column h4{
 
 main #aboutus .imagen {
 
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
    
 }
 
-main #aboutus .imagen .marco:hover{
+main #aboutus .imagen:hover .marco{
 
     border: 3px solid var(--colorprincipal);
-    transform: rotateZ(10deg);
+    transform: rotatez(10deg);
     transition: 1s;
 }
 
 
 
-main #aboutus .imagen .marco img:hover{
-    transform: rotateZ(-10deg);
+main #aboutus .imagen:hover .marco img{
+    transform: rotatez(-10deg);
     transition:1s;
+    
 
 }
 
@@ -538,6 +543,8 @@ main #aboutus{
 }
 
 }
+
+
 @media(min-width: 768px) {
     header .nav-top a span {
         display: inline;
