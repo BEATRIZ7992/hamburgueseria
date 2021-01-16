@@ -27,6 +27,7 @@ img{
     --fuentesecundaria: 'Handlee', cursive;
     --colorprincipal: #fa573a;
     --colorsecundario: #21242e;
+    --colorterciario: #ffffff;
     --margingrid: 1em;
     --fontsize: 1em;
     --anchomaximo: 1100px;
@@ -497,7 +498,85 @@ main #aboutus .imagen:hover .marco img{
 
 /*fin aboutus*/
 
+/*Inicio de menu*/
 
+.colores{
+
+}
+
+ .estacion .tabla{
+
+    height: 100px;
+    width: 100px;
+    padding: var(--margingrid);
+    justify-content: left;
+    border-spacing: separate;
+    border-spacing: 3px;
+    list-style: none;
+    visibility: hidden;
+    background-color: pink;
+
+    //porque no hace absolutamesnte nada//
+    
+     
+    
+   
+
+}
+
+main section .container .offers{
+
+    height: 300px;
+    width: 300px;
+    padding: var(--margingrid);
+}
+
+.estacion ul li .boton{
+
+   
+    padding: var(--margingrid);
+    background-color: var(--colorprincipal);
+    height: 1100px;
+    width: 100px;
+
+    
+
+    
+}
+
+
+
+section .container .estacion ul li a{
+   color: var(--colorterciario);
+   font-size: var(--fuenteprincipal);
+   color:var(--colorprincipal)
+    
+  
+   
+
+}
+
+
+main  .grid article{
+    display: grid;
+
+}
+
+main #ourservices .grid article{
+
+    padding: calc(var(--margingrid)*2) 0;
+    border-bottom: 1px solid #aaa;
+
+
+}
+
+article .imagen1{
+
+    height: 200px;
+    width: 250px;
+
+}
+/*fin de menu*/
 
 /*mediaquerys*/
 
