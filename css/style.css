@@ -390,9 +390,7 @@ main section .underline{
 
 }
 
-.colores{
-    background-color: var(--colorsecundario);
-}
+
 
 main section .underline hr{
     position: absolute;
@@ -498,25 +496,44 @@ main #aboutus .imagen:hover .marco img{
 
 /*fin aboutus*/
 
+
+
+
 /*Inicio de menu*/
 
+
 .colores{
+    background-color: var(--colorsecundario);
+    
 
 }
+
+#grid{
+
+    display: grid;
+    padding: calc(var(--margingrid)*4);
+    justify-content: center;
+    float: top;
+    
+
+    
+
+}
+
 
  .estacion .tabla{
 
     height: 100px;
     width: 100px;
     padding: var(--margingrid);
-    justify-content: left;
+
     border-spacing: separate;
     border-spacing: 3px;
     list-style: none;
     visibility: hidden;
     background-color: pink;
 
-    //porque no hace absolutamesnte nada//
+    /*porque no hace absolutamesnte nada*/
     
      
     
@@ -529,15 +546,25 @@ main section .container .offers{
     height: 300px;
     width: 300px;
     padding: var(--margingrid);
+    display: inline-block;
+    color: white;
+    
 }
 
-.estacion ul li .boton{
+.container .offers p{
+
+    color:white;
+    
+
+}
+
+.container ul li .boton{
 
    
-    padding: var(--margingrid);
+    
     background-color: var(--colorprincipal);
-    height: 1100px;
-    width: 100px;
+    border-radius: 20px;
+  
 
     
 
@@ -546,39 +573,70 @@ main section .container .offers{
 
 
 
-section .container .estacion ul li a{
+section .container ul{
    color: var(--colorterciario);
    font-size: var(--fuenteprincipal);
-   color:var(--colorprincipal)
+   color:var(--colorprincipal);
+   padding: var(--margingrid);
+   display: inline-block;
+   font-weight: cursive;
+   
     
   
    
 
 }
+section .container li{
+
+    list-style: none;
+    padding: var(--margingrid);
+}
+
+.container li .nuevafuente{
+    text-decoration: none;
+    font-size: var(--fuenteprincipal);
+    color:white;
+
+}
 
 
-main  .grid article{
+main  .centrado article .derecha h3{
     display: grid;
+    color: white;
+    font-weight: 700;
 
 }
 
-main #ourservices .grid article{
-
-    padding: calc(var(--margingrid)*2) 0;
-    border-bottom: 1px solid #aaa;
-
-
+main .centrado{
+    margin-left: auto;
+    margin-right: auto;
 }
 
-article .imagen1{
+.derecha  span {
+    color: var(--colorprincipal);
+}
+
+.derecha p{
+    color: white;
+}
+
+
+
+.imagen1{
 
     height: 200px;
     width: 250px;
+    display: grid;
+    padding: var(--margingrid);
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    float: top;
+    position:absolute;
 
 }
 /*fin de menu*/
 
-/*mediaquerys*/
+/*mediaquerys----------------------------------------------------------------------------*/
 
 
 @media( min-width: 600px)
