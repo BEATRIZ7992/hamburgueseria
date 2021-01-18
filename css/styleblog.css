@@ -174,14 +174,6 @@ header nav .hamburguesa div {
 
 
 
-/*footer .contenedorbarra .barra{
-
-    height: 50px;
-    width: 700px;
-    background-color:var( --colorsecundario);
-    float:right;
-
-}*/
 
 footer{
     background-color: var(--colorsecundario);
@@ -214,91 +206,12 @@ footer a:hover {
     right: 10px;
     font-size: 250%;
 }
-/*
-footer .legalfooter{ 
-    
-
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height:50px;
-    display: block;
-    list-style: none;
-    
-
-    /*me resulta muy dificil los margin*/
-     
-/*
-}
-    
-
-footer .nav-botton{ 
-
-    background-color: var(--colorsecundario);
-    padding: var(--margingrid) 0px;
-}
-
-footer .nav-botton .footer-legal-menu{
-
-    display: flex;
-    justify-content: space-around;
-
-}
-
-footer .nav-botton a{
-    color: white;
-     text-decoration: none;
-     list-style: none;
-     font-size: var(1em);
-     font: var(--fuentesecundaria);
-}
-
-
-*/
-
-/*fin footer*/
 
 
 
-/* query footer
-
-@media(min-width: 768px){
-
-    footer .nav-botton{
-        display: inline;
-        color: white
-    }
-}
-
-NO LO NECESITA?¿?
-*/
-/*
-<div class="legalfooter">
-            <nav class="nav-botton">
-
-                <div class="footer-legal-menu">
-                    <li><a href="">Copyright&copy;2020</a></li>
-                    <li><a href="">Aviso legal</a></li>
-                    <li><a href="">Cookies</a></li>
-
-                </div>
-            </nav>
-            */
 
 
-
-            /* Inicio herp*/
-
-.hero {
-    background-image: url(../images/fondo.jpg);
-    height: 60vh;
-    background-position: center center;
-    background-size: cover;
-    background-color: #777;
-    background-blend-mode:multiply;
-    color: white;
-    display: flex;
-}
+/* hero*/
 
 .hero .container{
     display: flex;
@@ -499,144 +412,46 @@ main #aboutus .imagen:hover .marco img{
 
 
 
-/*Inicio de menu*/
+
+/*fin de menu*/
+
+/*inicio blog*/
 
 
-.colores{
-    background-color: var(--colorsecundario);
-    
-
-}
-
-#grid{
-
-    display: grid;
-    padding: calc(var(--margingrid)*4);
-    justify-content: center;
-    float: top;
-    
-
-    
-
-}
 
 
- .estacion .tabla{
+main .container article{
 
-    height: 100px;
-    width: 100px;
-    padding: var(--margingrid);
-
-    border-spacing: separate;
-    border-spacing: 3px;
-    list-style: none;
-    visibility: hidden;
-    background-color: pink;
-
-    /*porque no hace absolutamesnte nada*/
-    
-     
-    
-   
-
-}
-
-main section .container .offers{
-
-    height: 300px;
+    height: 200px;
     width: 300px;
-    padding: var(--margingrid);
-    display: inline-block;
-    color: white;
-    
-}
-
-.container .offers p{
-
-    color:white;
-    
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--margingrid);
+    margin-bottom: calc(var(--margingrid)*2);
+    float: left;
 
 }
-
-.container ul li .boton{
-
-   
-    
-    background-color: var(--colorprincipal);
-    border-radius: 20px;
-  
-
-    
-
-    
+main .container section{
+    position: relative;
 }
 
-
-
-section .container ul{
-   color: var(--colorterciario);
-   font-size: var(--fuenteprincipal);
-   color:var(--colorprincipal);
-   padding: var(--margingrid);
-   display: inline-block;
-   font-weight: cursive;
-   
-    
-  
-   
-
-}
-section .container li{
-
-    list-style: none;
-    padding: var(--margingrid);
+main .container article{
+    padding: calc(var(--margingrid)*2);
 }
 
-.container li .nuevafuente{
-    text-decoration: none;
-    font-size: var(--fuenteprincipal);
-    color:white;
-
-}
-
-
-main  .centrado article .derecha h3{
-    display: grid;
-    color: white;
+main .container h3{
+    margin-bottom: calc(var(--margingrid)*2);
+    font-style: var(--fuenteprincipal);
     font-weight: 700;
 
 }
-
-main .centrado{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.derecha  span {
+main .container h4{
+    font-style: var(--fuenteprincipal);
+    font-weight: 700;
     color: var(--colorprincipal);
+    font-size: 10px;
+    margin-bottom: calc(var(--margingrid)*2);
 }
-
-.derecha p{
-    color: white;
-}
-
-
-
-.imagen1{
-
-    height: 200px;
-    width: 250px;
-    display: grid;
-    padding: var(--margingrid);
-    grid-template-columns: auto;
-    grid-template-rows:auto;
-    float: top;
-    position:absolute;
-
-}
-/*fin de menu*/
-
-/*inicio blog
 /***mediaquerys----------------------------------------------------------------------------*/
 
 
@@ -717,4 +532,6 @@ footer{
         padding: 0.5em calc(var(--margingrid));
     }
 }
+
+
 
