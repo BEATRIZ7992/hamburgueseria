@@ -1,0 +1,14 @@
+*{
+
+    padding: 10px;
+    margin: auto;
+
+}
+
+header .nav-top{
+    display: grid;
+    height: 20px;
+    width: auto;
+   color: blue;
+
+}
